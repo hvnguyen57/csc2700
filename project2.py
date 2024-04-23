@@ -11,7 +11,7 @@ words = re.findall(r'\b\w+\b', text)
 num_words = len(words)
 
 # Number of vowwels
-num_vowels = sum(1 for char in text if char.lower() in 'aeiou')
+num_vowels = sum(1 for char in text if char.lower() in 'aeiouAEIOU')
 
 # Number of distinct words
 distinct_words = collections.Counter(words)
